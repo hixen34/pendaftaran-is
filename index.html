@@ -157,6 +157,10 @@ for(let i=0;i<10;i++){
 <input type="text" id="nama" placeholder="Nama" required>
 <input type="number" id="umur" placeholder="Umur" required>
 <input type="text" id="asal" placeholder="Asal" required>
+
+<!-- TAMBAHAN -->
+<input type="text" id="tiktok" placeholder="Akun tiktok" required>
+
 <select id="status" required>
 <option value="">Pilih Status</option>
 <option>Pelajar</option>
@@ -194,6 +198,7 @@ setTimeout(()=>{
 const nama=document.getElementById("nama").value;
 const umur=document.getElementById("umur").value;
 const asal=document.getElementById("asal").value;
+const tiktok=document.getElementById("tiktok").value; // TAMBAHAN
 const status=document.getElementById("status").value;
 const alasan=document.getElementById("alasan").value;
 
@@ -203,6 +208,7 @@ const message=
 Nama: ${nama}
 Umur: ${umur}
 Asal: ${asal}
+Akun tiktok: ${tiktok}  // TAMBAHAN
 Status: ${status}
 Alasan masuk ISA: ${alasan}`;
 
